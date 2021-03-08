@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header [translucent]="true"> </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="bg_class">
+  <ion-header collapse="condense"> </ion-header>
+
+  <br />
+  <center>
+    <img src="assets\gestibank.png" width="232.66" height="53.33" />
+  </center>
+  <br /><br /><br />
+  <ion-text color="secondary">
+    <center><h1>Bienvenue sur GestiBank</h1></center></ion-text
+  >
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button shape="round" color="warning" routerLink="/connexion"
+      >Connexion</ion-button
+    ><br /><br /><br /><br />
+
+    <ion-button shape="round" color="warning" routerLink="/creercompte"
+      >Creer un compte</ion-button
+    ><br /><br /><br /><br />
+
+    <ion-button shape="round" color="warning" routerLink="/conversion"
+      >Conversion de devise</ion-button
+    >
   </div>
 </ion-content>

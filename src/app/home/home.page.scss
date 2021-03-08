@@ -25,3 +25,20 @@
 #container a {
   text-decoration: none;
 }
+
+#h1 {
+  color: #f7931a;
+}
+
+ion-button {
+  width: 200px;
+}
+
+.bg_class {
+  --background: linear-gradient(
+    197deg,
+    #ffffff 0%,
+    #fafafa 34%,
+    #f7931a 100%
+  ) !important;
+}

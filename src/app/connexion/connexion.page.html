@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true" class="bg_class">
+  <br />
+  <ion-icon name="home-outline" size="large" routerLink="/home"></ion-icon>
+  <center>
+    <img src="assets\gestibank.png" width="232.66" height="53.33" />
+  </center>
+
+  <br /><br /><br />
+  <ion-text color="secondary">
+    <center><h1>Connexion</h1></center></ion-text
+  >
+
+  <div id="container">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-row> Email : </ion-row>
+            <br />
+            <ion-row> Mot de passe : </ion-row>
+          </ion-col>
+          <ion-col>
+            <ion-row>
+              <ion-input
+                name="email"
+                type="email"
+                placeholder="your@email.com"
+                ngModel
+                required
+              ></ion-input>
+            </ion-row>
+            <ion-row>
+              <ion-input
+                name="password"
+                type="password"
+                placeholder="Password"
+                ngModel
+                required
+              ></ion-input>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </div>
+
+  <div>
+    <center>
+      <ion-button shape="round" color="warning" routerLink="/mescomptes"
+        >Valider</ion-button
+      >
+    </center>
+  </div>
+</ion-content>
