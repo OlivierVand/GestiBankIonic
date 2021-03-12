@@ -1,17 +1,45 @@
-.my-custom-menu {
-  --width: 500px;
-}
-
-ion-list {
-  background-color: white;
-}
-
-ion-item {
-  background-color: white;
-}
-
 ion-icon {
   position: absolute;
-  right: 20px;
+
+  right: 10px;
+
   color: #f7931a;
+}
+
+ion-card-subtitle {
+  color: black;
+}
+
+ion-card-header {
+  color: black;
+}
+
+ion-button {
+  position: auto;
+
+  color: #f7931a;
+}
+
+.card-subtitle {
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
 }

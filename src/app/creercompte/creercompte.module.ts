@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { CreercomptePageRoutingModule } from './creercompte-routing.module';
-
 import { CreercomptePage } from './creercompte.page';
 
 @NgModule({
@@ -13,8 +10,8 @@ import { CreercomptePage } from './creercompte.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CreercomptePageRoutingModule
+    CreercomptePageRoutingModule,
   ],
-  declarations: [CreercomptePage]
+  declarations: [CreercomptePage],
 })
 export class CreercomptePageModule {}

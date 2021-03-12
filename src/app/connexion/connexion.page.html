@@ -10,45 +10,45 @@
     <center><h1>Connexion</h1></center></ion-text
   >
 
-  <div id="container">
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-row> Email : </ion-row>
-            <br />
-            <ion-row> Mot de passe : </ion-row>
-          </ion-col>
-          <ion-col>
-            <ion-row>
-              <ion-input
-                name="email"
-                type="email"
-                placeholder="your@email.com"
-                ngModel
-                required
-              ></ion-input>
-            </ion-row>
-            <ion-row>
-              <ion-input
-                name="password"
-                type="password"
-                placeholder="Password"
-                ngModel
-                required
-              ></ion-input>
-            </ion-row>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </div>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-item>
+              <ion-label
+                ><ion-icon name="mail-outline"></ion-icon> E-mail :
+              </ion-label>
+              <ion-input [(ngModel)]="email"></ion-input>
+              <br /><br />
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
-  <div>
-    <center>
-      <ion-button shape="round" color="warning" routerLink="/mescomptes"
-        >Valider</ion-button
-      >
-    </center>
-  </div>
-</ion-content>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-item>
+              <ion-label
+                ><ion-icon name="lock-closed-outline"></ion-icon> Mot de passe :
+              </ion-label>
+              <ion-input [(ngModel)]="password" type="password"></ion-input>
+              <br /><br />
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="text-align:left"></ion-col>
+        <ion-col>
+          <br /><br />
+          <ion-button shape="round" color="warning" (click)="connect()">
+            Se connecter
+          </ion-button>
+        </ion-col>
+        <ion-col class="text-align:right"></ion-col>
+      </ion-row>
+    </ion-grid> </ion-content
+></ion-content>

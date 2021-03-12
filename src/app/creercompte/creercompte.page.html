@@ -10,54 +10,64 @@
     <center><h1>Créer un compte</h1></center></ion-text
   >
 
-  <div id="container">
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-row> Nom : </ion-row>
-            <br />
-            <ion-row> Email : </ion-row>
-            <br />
-            <ion-row> Téléphone : </ion-row>
-          </ion-col>
-          <ion-col>
-            <ion-row>
-              <ion-input
-                name="Nom"
-                type="name"
-                placeholder="Votre Nom"
-                ngModel
-                required
-              ></ion-input>
-            </ion-row>
-            <ion-row>
-              <ion-input
-                name="email"
-                type="email"
-                placeholder="votre@email.com"
-                ngModel
-                required
-              ></ion-input>
-            </ion-row>
-            <ion-row>
-              <ion-input
-                name="telephone"
-                type="telephone"
-                placeholder="0102030405"
-                ngModel
-                required
-              ></ion-input>
-            </ion-row>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </div>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-item>
+              <ion-label>Nom : </ion-label>
+              <ion-input [(ngModel)]="nom"></ion-input>
+              <br /><br />
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-item>
+              <ion-label>E-mail : </ion-label>
+              <ion-input [(ngModel)]="mail"></ion-input>
+              <br /><br />
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
 
-  <div>
-    <center>
-      <ion-button shape="round" color="warning">Valider</ion-button>
-    </center>
-  </div>
-</ion-content>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-item>
+              <ion-label>Tel : </ion-label>
+              <ion-input [(ngModel)]="phone"></ion-input>
+              <br /><br />
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-select placeholder="Sélectionner un type de compte">
+              <ion-select-option value="orange">Classique</ion-select-option>
+              <ion-select-option>Avec découvert</ion-select-option>
+              <ion-select-option>Épargne</ion-select-option>
+            </ion-select>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="text-align:left"></ion-col>
+        <ion-col>
+          <br /><br />
+          <ion-button shape="round" color="warning" (click)="UsersCreation()">
+            S'INSCRIRE
+          </ion-button>
+        </ion-col>
+        <ion-col class="text-align:right"></ion-col>
+      </ion-row>
+    </ion-grid> </ion-content
+></ion-content>

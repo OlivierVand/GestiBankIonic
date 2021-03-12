@@ -3,3 +3,13 @@ ion-icon {
   right: 20px;
   color: #f7931a;
 }
+
+ion-select {
+  color: black;
+  --placeholder-opacity: 1;
+}
+
+ion-select-option {
+  color: black;
+  --opacity: 1;
+}

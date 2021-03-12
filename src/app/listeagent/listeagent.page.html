@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true" class="bg_class">
+  <br />
+  <ion-icon name="home-outline" size="large" routerLink="/home"></ion-icon>
+  <center>
+    <img src="assets\gestibank.png" width="232.66" height="53.33" />
+  </center>
+
+  <br /><br /><br />
+  <ion-text color="secondary">
+    <center><h1>Liste des agents</h1></center></ion-text
+  >
+
+  <ion-card-content>
+    <table class="table">
+      <tr>
+        <th>Nom</th>
+        <th style="padding-left: 50px">Email</th>
+      </tr>
+      <tr *ngFor="let users of users">
+        <td>{{users.name}}</td>
+        <td style="padding-left: 50px">{{users.email}}</td>
+      </tr>
+    </table>
+  </ion-card-content>
+</ion-content>

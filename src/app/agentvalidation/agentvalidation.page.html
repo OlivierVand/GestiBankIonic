@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" class="bg_class">
+  <br />
+  <ion-icon name="home-outline" size="large" routerLink="/home"></ion-icon>
+  <center>
+    <img src="assets\gestibank.png" width="232.66" height="53.33" />
+  </center>
+
+  <br /><br /><br />
+  <ion-text color="secondary">
+    <center><h1>Liste des clients à valider</h1></center></ion-text
+  >
+
+  <ion-content>
+    <ion-grid>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Choix du client à valider</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-card>
+                <ion-select [(ngModel)]="user" name="user">
+                  <ion-select-option [value]="user" *ngFor="let user of clients"
+                    >{{user.name}}</ion-select-option
+                  >
+                </ion-select>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-row>
+        <ion-col class="text-align:left"></ion-col>
+        <ion-col>
+          <ion-button shape="round" color="warning" (click)="updateUsers()">
+            Valider Client
+          </ion-button>
+        </ion-col>
+        <ion-col class="text-align:right"></ion-col>
+      </ion-row>
+    </ion-grid> </ion-content
+></ion-content>

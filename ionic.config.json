@@ -1,5 +1,7 @@
 {
   "name": "GestiBank",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

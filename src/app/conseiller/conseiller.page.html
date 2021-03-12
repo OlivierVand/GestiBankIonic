@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title
+      >Contacter mon conseiller
+      <ion-icon name="power" size="large" routerLink="/connexion"></ion-icon
+    ></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-content [fullscreen]="true" class="bg_class">
+      <br />
+      <center>
+        <img src="assets/gestibank.png" width="232.66" height="53.33" />
+      </center>
+
+      <div id="container">
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/amine.jpg" />
+            </ion-avatar>
+            <h4>Amine Mezghich</h4>
+
+            <p>Conseiller bancaire de GestiBank</p>
+            <br />
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/avatar-cher.png" />
+            </ion-avatar>
+            <h4>Olivier Vandamme</h4>
+
+            <p>Conseiller bancaire de GestiBank</p>
+            <br />
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/avatar-cher.png" />
+            </ion-avatar>
+            <h4>Catherine Sans</h4>
+
+            <p>Conseillére bancaire de GestiBank</p>
+            <br />
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-content>
+  </ion-content>
+</ion-content>

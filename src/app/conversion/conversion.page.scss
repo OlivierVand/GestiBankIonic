@@ -3,3 +3,61 @@ ion-icon {
   right: 20px;
   color: #f7931a;
 }
+
+ion-card {
+  background-color: antiquewhite;
+  color: rgb(255, 255, 255);
+}
+
+ion-card-subtitle {
+  color: #f7931a;
+}
+
+ion-card-title {
+  color: #f7931a;
+}
+
+ion-button {
+  --background: #f7931a;
+}
+
+ion-toolbar {
+  --background: white;
+  color: #f7931a;
+}
+
+ion-content {
+  --background: white;
+}
+
+ion-item {
+  --background: white;
+  color: #f7931a;
+}
+
+ion-label {
+  --backgroung: white;
+}
+
+h3 {
+  margin-top: 50px;
+  color: dodgerblue;
+}
+
+ion-list {
+  --background: white;
+}
+
+ion-list-header {
+  background-color: white;
+}
+
+ion-select {
+  color: black;
+  --placeholder-opacity: 1;
+}
+
+ion-select-option {
+  color: #f7931a;
+  --opacity: 1;
+}
